@@ -1,0 +1,24 @@
+.btn{
+	border: 1px solid transparent;
+	border-radius:20px;
+	display:inline-block;
+	vertical-align:top;
+	font-size:18px;
+	font-weight:600;
+	line-height:1.2222;
+	padding:0.6111em 2.5556em 0.8333em;//11px 46px 15px
+	@include media("<desktop") {
+		font-size: 14px;
+	}
+}
+
+.btn-primary{
+	background:$brand-primary;
+	border-color: $brand-primary;
+	color:$white;
+	&:hover {
+		background: $base-link-hover-color;
+		border-color: $base-link-hover-color;
+		color:$white;
+	}
+}

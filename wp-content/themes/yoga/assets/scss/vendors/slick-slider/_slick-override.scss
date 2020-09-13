@@ -1,0 +1,40 @@
+.slick-arrow{
+	background: $white;
+	box-shadow: 9px 9px 9px rgba($black, 0.05);
+	border: 0;
+	border-radius:100%;
+	height:50px;
+	left:0;
+	min-width: 0;
+	padding:0;
+	position:absolute;
+	top:50%;
+	transform:translate(-50%, -50%);
+	width:50px;
+	z-index:10;
+	&:hover {
+		background:$white;
+		box-shadow: 4px 4px 4px rgba($black, 0.1);
+	}
+	&.slick-disabled {
+		opacity:0.5;
+		pointer-events:none;
+	}
+	&.slick-next {
+		left:100%;
+		&:before {
+			background-position:0 -60px;
+		}
+	}
+	&:before {
+		background-position:0 -30px;
+		content:'';
+		height:19px;
+		left:50%;
+		position:absolute;
+		top:50%;
+		transform:translate(-50%, -50%);
+		width:12px;
+		@extend %icons-sprite;
+	}
+}

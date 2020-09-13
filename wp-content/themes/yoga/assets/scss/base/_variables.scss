@@ -1,0 +1,74 @@
+// Colors
+// Color calculator - http://razorjam.github.io/sasscolourfunctioncalculator/
+// Color names - http://name-of-color.com/
+
+// $gray: #999;
+$black:				#000;
+$white:				#fff;
+$brand-primary:		#5b6ceb;
+// $brand2:			#5363d8;
+$gray:				#888;
+$gray2:				#f2f2f2;
+$gray3:				#777;
+$gray4:				#999;
+$gray5:				#555;
+
+// $light-blue: #39f;
+
+$base-font-sans-serif: 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$base-font-sans-serif-calligraphic: 'FreeStyle Script', 'Open Sans', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+// $base-font-serif: 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
+
+// Body
+$base-text-color:				#555;
+$base-background-color:			$white;
+
+$font-size-base:				14px;
+$line-height-base:				1.5714;
+
+$base-font-family:				$base-font-sans-serif;
+
+// $vertical-rhythm: ($line-height-base * 1em);
+
+// Indents
+$gap: 30px;
+// $trim: 15px;
+// $trim-middle: 20px;
+// $trim-big: 30px;
+
+$base-min-width: 320px;
+$max-content-width: 1202px;
+$max-container-width: $max-content-width + $gap*2;
+
+// Links
+$base-link-color: $brand-primary;
+$base-link-hover-color: #475bf1;
+
+// Buttons 
+// $btn-color: $white !default;
+// $btn-background: $black !default;
+// $btn-padding: 0.4em 0.7em !default;
+// $btn-font-size: inherit !default;
+
+// Forms
+$form-element-background:		$gray2;
+$form-element-padding:			14px 10px 15px !default;
+$form-element-border-color:		$form-element-background;
+// $form-element-focus-border-color: $black !default;
+$placeholder-color:				$gray !default;
+
+// Headers
+$h1-font-size: 48px !default;
+$h2-font-size: 30px !default;
+$h3-font-size: 41px !default;
+$h4-font-size: 20px !default;
+// $h5-font-size: 17px !default;
+// $h6-font-size: 15px !default;
+
+$headings-font-family:			inherit !default;
+$headings-color:				$brand-primary;
+
+
+// $animation-speed: 0.3s;
+
+$border-radius-base: 8px;

@@ -1,0 +1,176 @@
+#footer {
+	background:$brand-primary;
+	color:$white;
+	a{
+		color:inherit;
+	}
+}
+
+.footer-content{
+	padding:92px 0 102px;
+	@include media("<desktop") {
+		padding:40px 0 52px;
+	}
+	@include media("<tablet") {
+		padding:30px 0 10px;
+	}
+	> .container{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
+		padding:0;
+		.column{
+			&.half{
+				padding:0 $gap/2;
+				width:50%;
+				@include media("<tablet") {
+					width:100%;
+				}
+			}
+		}
+	}
+	h3{
+		color:inherit;
+		font-family: $base-font-family;
+		font-size: 18px;
+		font-weight:normal;
+		margin:0 0 47px;
+		text-transform:uppercase;
+		@include media("<desktop") {
+			margin:0 0 20px;
+		}
+		@include media("<tablet") {
+			margin:0 0 10px;
+		}
+	}
+	p{
+		margin:0 0 68px;
+		@include media("<desktop") {
+			margin:0 0 30px;
+		}
+		@include media("<tablet") {
+			margin:0 0 10px;
+		}
+	}
+	.social-networks{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: center;
+		align-items: center;
+		margin:-8px;
+		@extend %listreset;
+		@include media("<tablet") {
+			margin-bottom: 20px;
+		}
+		li{
+			padding:8px;
+		}
+		a{
+			display:block;
+			height:21px;
+			width:21px;
+			@extend %icons-sprite;
+		}
+		.icon-pinterest{
+			background-position:0 -90px;
+		}
+		.icon-twitter{
+			background-position:0 -120px;
+			height:25px;
+			width:25px;
+		}
+		.icon-facebook{
+			background-position:0 -150px;
+		}
+		.icon-gplus{
+			background-position:0 -180px;
+		}
+		.icon-instagram{
+			background-position:0 -210px;
+		}
+	}
+	.contacts-list{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-content: flex-start;
+		align-items: flex-start;
+		@extend %listreset;
+		> li{
+			padding:0 0 22px 36px;
+			position:relative;
+			width:50%;
+			@include media("<tablet") {
+				width:100%;
+			}
+			&.icon-map {
+				&:before {
+					background-position:0 -240px;
+					left:-2px;
+					top:7px;
+				}
+			}
+			&.icon-email {
+				&:before {
+					background-position:0 -270px;
+					left:4px;
+					top:3px;
+				}
+				a{
+					word-break: break-all;
+				}
+			}
+			&.icon-phone {
+				&:before {
+					background-position:0 -300px;
+					left:1px;
+					top:8px;
+				}
+			}
+			&.icon-earth {
+				&:before {
+					background-position:0 -330px;
+					left:4px;
+					top:4px;
+				}
+			}
+			&:before {
+				content: '';
+				height:21px;
+				left:0;
+				position:absolute;
+				top:0;
+				width:21px;
+				@extend %icons-sprite;
+			}
+		}
+		address{
+			font-style:normal;
+		}
+	}
+}
+
+.footer-bottom{
+	background:darken(desaturate($brand-primary, 15.23), 5.29);
+	color:#b7bffc;
+	font-size: 16px;
+	padding:37px 0 38px;
+	@include media("<desktop") {
+		font-size: 12px;
+		padding:15px 0;
+	}
+	@include media("<desktop") {
+		padding:10px 0;
+	}
+}
+
+.copy{
+	margin:0;
+	text-align:center;
+}
